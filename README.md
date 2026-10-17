@@ -1,4 +1,3 @@
-
 # KingScore ⚽
 
 Welcome to KingScore!
