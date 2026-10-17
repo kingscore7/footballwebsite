@@ -1,0 +1,206 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080d18;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #0d1424;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #b6ff00;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #b6ff00;
+}
+
+button {
+    background: #b6ff00;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 600px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: radial-gradient(circle at 80% 50%, #183c27, #080d18 55%);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tag {
+    color: #b6ff00;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero h2 {
+    font-size: 55px;
+    line-height: 1.15;
+}
+
+.hero h2 span {
+    color: #b6ff00;
+}
+
+.description {
+    color: #aeb7c7;
+    line-height: 1.8;
+    margin: 25px 0;
+}
+
+.coming-soon {
+    color: #b6ff00;
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.launch-text {
+    color: #aeb7c7;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.football {
+    font-size: 180px;
+    filter: drop-shadow(0 0 35px #b6ff00);
+}
+
+.features {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: #121c30;
+    padding: 35px 20px;
+    border-radius: 12px;
+    border: 1px solid #26334a;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    border-color: #b6ff00;
+}
+
+.feature-card h3 {
+    color: #b6ff00;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #aeb7c7;
+    line-height: 1.6;
+}
+
+.countdown {
+    text-align: center;
+    padding: 80px 20px;
+    background: #101a2b;
+}
+
+.countdown p {
+    margin: 20px;
+    color: #aeb7c7;
+}
+
+.countdown h1 {
+    color: #b6ff00;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+footer {
+    padding: 35px;
+    text-align: center;
+    color: #aeb7c7;
+    line-height: 2;
+}
+
+footer h2 {
+    color: #b6ff00;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .football {
+        font-size: 120px;
+    }
+}
